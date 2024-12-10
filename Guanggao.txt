@@ -368,6 +368,31 @@ hostname = patient-api.suh.cn, userpms-api.suh.cn, se-api.djiits.com, a.line.me,
 # 广告
 ^https?:\/\/audiobookpay\.kuwo\.cn\/a\.p\?op=get_advertright_endtime url reject-dict
 
+#本重写仅限本人使用，严谨传播
+#解决酷我发热问题，在本地添加下面的分流
+# > 酷我音乐_通用广告请求
+https?:\/\/vip1\.kuwo\.cn\/vip\/activity\/kwMemberDay url reject-200
+# > 酷我音乐_屏蔽热词
+https?:\/\/hotword\.kuwo\.cn\/hotword\.s url reject-dict
+# > 酷我音乐_通用广告请求
+https?:\/\/vip1\.kuwo\.cn\/vip_adv\/ url reject-dict
+# > 酷我音乐_通用广告请求
+https?:\/\/wapi\.kuwo\.cn\/openapi\/v1\/app\/pasterAdvert url reject-200
+# > 酷我音乐_应用内弹窗及右下角
+^https?:\/\/mobilead\.kuwo\.cn\/ url reject-200
+# > 酷我音乐_搜索框处理
+https?:\/\/searchrecterm\.kuwo\.cn\/recterm\.s url script-response-body https://github.com/ddgksf2013/dev/raw/main/kuwomusic.js
+# > 酷我音乐_去除首页轮播广告和tips
+https?:\/\/mgxhtj\.kuwo\.cn\/mgxh\.s url script-response-body https://github.com/ddgksf2013/dev/raw/main/kuwomusic.js
+# > 酷我音乐_去除会员页广告
+https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/page\/cells url script-response-body https://github.com/ddgksf2013/dev/raw/main/kuwomusic.js
+# > 酷我音乐_去除会员页顶部广告tab
+https?:\/\/appi\.kuwo\.cn\/kuwopay\/vip-tab\/setting url script-response-body https://github.com/ddgksf2013/dev/raw/main/kuwomusic.js
+# 开屏广告
+^https://us.l.qq.com/exapp? url reject-200
+^http://rich.kuwo.cn/AdService/kaiping/adinfo? url reject-200
+
+
 
 
 # >>>>>>>>>>>>>>> ✅ L ✅ <<<<<<<<<<<<<<
