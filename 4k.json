@@ -1,0 +1,629 @@
+//接口所有文件全来自互联网搜集而来，目前接口使用的文件大部分都是真心真语大佬的本地包文件，纯公益资源，免费给大家白嫖。
+// baipiaoへ　　　　　／|
+// 　　/＼7　　　 ∠＿/
+// 　 /　│　　 ／　／
+// 　│　Z ＿,＜　／　　 /`ヽ
+// 　│　　　　　ヽ　　 /　　〉
+// 　 Y　　　　　`　 /　　/
+// 　ｲ●　､　●　　⊂⊃〈　　/
+// 　()　 へ　　　　|　＼〈
+// 　　>ｰ ､_　 ィ　 │ ／／
+// 　 / へ　　 /　ﾉ＜| ＼＼
+// 　 ヽ_ﾉ　　(_／　 │／／
+// 　　7　　　　　　　|／
+// 　　＞―r￣￣`ｰ―＿6
+{
+  "spider": "./baipiao.jar;md5;554790a5db25bc78eb0b3083391461a0",
+  "logo": "./logo/baipiao4k.jpg",
+  "wallpaper": "./wallpaper/baipiao4k.jpg",
+  "warningText": "白嫖提醒你：所有资源均为互联网搜集而来，纯公益资源，免费白嫖，没有任何收费性质。",
+  "parses": [
+    {
+      "name": "白嫖4K",
+      "type": 1,
+      "url": "http://154.9.253.211:777/api/?key=KBsgvsjHCyCWuPBah6&url="
+    }
+  ],
+  "sites": [
+    {
+      "key": "豆瓣TG搜索",
+      "name": "白嫖豆瓣热播",
+      "type": 3,
+      "api": "csp_TgYunDouBanPan",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "siteUrl": "http://127.0.0.1:9999",
+        "channelUsername": "hao115,guaguale115,longzbija,dianyingshare,XiangxiuNB,yunpanpan,kuakeyun,zaihuayun,Quark_Movies,alyp_4K_Movies,vip115hot,yunpanshare,ucwangpan,Quark_Share_Channel,Aliyundrive_Share_Channel,shareAliyun,ikiviyyp,wanwansubchat,wangpanziyuan2021,alyp_1,quanziyuanshe",
+        "commonConfig": "./json/peizhi.json",
+        "filter": "./json/douban.json"
+      }
+    },  
+    {
+      "key": "更新公告",
+      "name": "更新时间12月19日",
+      "type": 3,
+      "api": "csp_Init",
+      "jar": "",
+      "searchable": 0,
+      "changeable": 0
+    },
+    {
+      "key": "公告2",
+      "name": "QQ交流群978602644",
+      "searchable": 0,
+      "changeable": 0
+    },  
+    {
+      "key": "配置中心",
+      "name": "网盘配置中心",
+      "type": 3,
+      "api": "csp_ConfigCenter",
+      "style": {
+        "type": "rect",
+        "ratio": 1.597
+      },
+      "searchable": 0,
+      "changeable": 0,
+      "ext": {
+        "commonConfig": "./json/peizhi.json"
+      }
+    },
+    {
+      "key": "天翼配置",
+      "name": "其他网盘配置",
+      "type": 3,
+      "api": "csp_Wexconfig",
+      "searchable": 0,
+      "changeable": 0,
+      "indexs": 0,
+      "style": {
+        "type": "list"
+      },
+      "jar": "./baipiao_wex.jar"
+    }, 
+    {
+      "key": "电视直播",
+      "name": "白嫖电视❛‿˂̵✧",
+      "type": 3,
+      "searchable": 0,
+      "quickSearch": 1,
+      "filterable": 1,
+      "changeable": 1,
+      "api": "./js/baipiao_live.js",
+      "ext": "./json/baipiao_live.json"
+    },    
+    {
+      "key": "玩偶网盘",
+      "name": "玩偶｜4K",
+      "type": 3,
+      "api": "csp_Wogg",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "commonConfig": "./json/peizhi.json",
+        "siteUrl": "https://woggpan.333232.xyz/",
+        "filter": "./json/wogg.json"
+      }
+    },
+    {
+      "key": "木偶网盘",
+      "name": "木偶｜4K",
+      "type": 3,
+      "api": "csp_kongbai",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "commonConfig": "./json/peizhi.json",
+        "siteUrl": "http://mogg.小胡.top/",
+        "filter": "./json/wogg.json"
+      }
+    },
+    {
+      "key": "蜡笔网盘",
+      "name": "蜡笔｜4K",
+      "type": 3,
+      "api": "csp_kongbai",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "commonConfig": "./json/peizhi.json",
+        "siteUrl": "http://labipan.com/",
+        "filter": "./json/wogg.json"
+      }
+    },
+    {
+      "key": "至臻网盘",
+      "name": "至臻｜4K",
+      "type": 3,
+      "api": "csp_kongbai",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "commonConfig": "./json/peizhi.json",
+        "siteUrl": "http://www.xhww.net/",
+        "filter": "./json/wogg.json"
+      }
+    },
+    {
+      "key": "闪电网盘",
+      "name": "闪电｜4K",
+      "type": 3,
+      "api": "csp_kongbai",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "commonConfig": "./json/peizhi.json",
+        "siteUrl": "http://feimaouc.cloud:666",
+        "filter": "./json/wogg.json"
+      }
+    },
+    {
+      "key": "小米网盘",
+      "name": "小米｜4K",
+      "type": 3,
+      "api": "csp_kongbai",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "commonConfig": "./json/peizhi.json",
+        "siteUrl": "http://www.mucpan.cc",
+        "filter": "./json/wogg.json"
+      }
+    },
+    {
+      "key": "多多网盘",
+      "name": "多多｜4K",
+      "type": 3,
+      "api": "csp_kongbai",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "commonConfig": "./json/peizhi.json",
+        "siteUrl": "https://tv.yydsys.top",
+        "filter": "./json/wogg.json"
+      }
+    },
+    {
+      "key": "欧歌网盘",
+      "name": "欧歌｜4K",
+      "type": 3,
+      "api": "csp_kongbai",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "commonConfig": "./json/peizhi.json",
+        "siteUrl": "https://woog.nxog.eu.org",
+        "filter": "./json/wogg.json"
+      }
+    },
+    {
+      "key": "六趣网盘",
+      "name": "六趣｜4K",
+      "type": 3,
+      "api": "csp_kongbai",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "commonConfig": "./json/peizhi.json",
+        "siteUrl": "https://wp.0v.fit",
+        "filter": "./json/wogg.json"
+      }
+    },
+    {
+      "key": "雷鲸天翼",
+      "name": "雷鲸｜4K",
+      "type": 3,
+      "api": "csp_Wexleijing",
+      "style": {
+        "type": "list"
+      },
+      "searchable": 1,
+      "changeable": 1,
+      "jar": "./baipiao_wex.jar"
+    },
+    {
+      "key": "盘他移动",
+      "name": "移动｜4K",
+      "type": 3,
+      "api": "csp_WexYDpanta",
+      "style": {
+        "type": "list"
+      },
+      "searchable": 1,
+      "changeable": 1,
+      "jar": "./baipiao_wex.jar"
+    },
+    {
+      "key": "星剧社",
+      "name": "星剧｜4K",
+      "type": 3,
+      "api": "csp_Star2",
+      "searchable": 1,
+      "filterable": 0,
+      "switchable": 0,
+      "ext": {
+        "commonConfig": "./json/peizhi.json"
+      }
+    },
+    {
+      "key": "云盘资源网",
+      "name": "云盘｜4K",
+      "type": 3,
+      "api": "./js/drpy2.min.js",
+      "style": {
+        "type": "list"
+      },
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./baipiao/js/ypzyw.js"
+    },
+    {
+      "key": "天翼搜索",
+      "name": "天翼｜4K",
+      "type": 3,
+      "api": "csp_Wextyso",
+      "searchable": 1,
+      "changeable": 0,
+      "jar": "./baipiao_wex.jar"
+    },
+    {
+      "key": "易搜",
+      "name": "易搜｜4K",
+      "type": 3,
+      "api": "csp_YiSo",
+      "searchable": 1,
+      "filterable": 0,
+      "switchable": 0,
+      "ext": {
+        "cookie": "",
+        "commonConfig": "./json/peizhi.json"
+      }
+    },
+    {
+      "key": "网盘搜索",
+      "name": "搜索｜4K",
+      "type": 3,
+      "api": "csp_PanSearch",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "commonConfig": "./json/peizhi.json"
+      }
+    },
+    {
+      "key": "小站盘搜",
+      "name": "小站｜4K",
+      "type": 3,
+      "api": "./js/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "ext": "./baipiao/js/xzps.js"
+    },
+    {
+      "key": "纸条盘搜",
+      "name": "纸条｜4K",
+      "type": 3,
+      "api": "csp_XiaoZhiTiao",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": {
+        "commonConfig": "./json/peizhi.json"
+      }
+    },
+    {
+      "key": "白嫖讯讯",
+      "name": "白嫖讯讯",
+      "type": 3,
+      "api": "./js/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "ext": "./baipiao/js/baipiaotxdm.js"
+    },
+    {
+      "key": "白嫖果果",
+      "name": "白嫖果果",
+      "type": 3,
+      "api": "./js/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "ext": "./baipiao/js/baipiaomgdm.js"
+    },
+    {
+      "key": "白嫖酷酷",
+      "name": "白嫖酷酷",
+      "type": 3,
+      "api": "./js/drpy2.min.js",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "order_num": 0,
+      "ext": "./baipiao/js/baipiaoykdm.js"
+    },
+    {
+      "key": "荐片",
+      "name": "荐片1080",
+      "type": 3,
+      "api": "csp_Jianpian",
+      "searchable": 1,
+      "changeable": 1,
+      "ext": "./json/jianpian.json"
+    },
+    {
+      "key": "七新影视",
+      "name": "七新1080",
+      "type": 3,
+      "api": "csp_XYQHiker",
+      "jar": "./jar/baipiao_xs.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./baipiao/json/qx.json"
+    },
+    {
+      "key": "8号影院",
+      "name": "八号1080",
+      "type": 3,
+      "api": "csp_XBPQ",
+      "jar": "./jar/baipiao_xs.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "./baipiao/json/8hao.json"
+    },
+    {
+      "key": "哔哩视频",
+      "name": "哔哩1080",
+      "type": 3,
+      "api": "csp_Bili",
+      "searchable": 1,
+      "changeable": 0,
+      "style": {
+        "type": "rect",
+        "ratio": 1.618
+      },
+      "ext": {
+        "json": "./json/bilibili.json",
+        "cookie": ""
+      }
+    }, 
+    {
+      "key": "视觉",
+      "name": "视觉1080",
+      "type": 3,
+      "searchable": 1,
+      "changeable": 1,
+      "quickSearch": 1,
+      "api": "https://drive.almondcloud.cn/f/q3JKT9/shijue.py",
+      "playerType": 2,
+      "filterable": 1
+    },
+    
+    {
+      "key": "热播弹幕",
+      "name": "热播1080",
+      "type": 3,
+      "api": "csp_TianTian",
+      "jar": "./jar/baipiao_xs.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "danmu": true,
+        "site": "aHR0cDovL3YucmJvdHYuY24="
+      }
+    },
+    {
+      "key": "文才弹幕",
+      "name": "文才1080",
+      "type": 3,
+      "api": "csp_Jpys",
+      "jar": "./jar/baipiao_xs.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "danmu": true
+      }
+    },
+    {
+      "key": "哔嘀弹幕",
+      "name": "哔滴1080",
+      "type": 3,
+      "api": "csp_Bdys",
+      "jar": "./jar/baipiao_xs.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": {
+        "site": "https://www.xlys01.com",
+        "danmu": true
+      }
+    },
+    {
+      "key": "金牌影视",
+      "name": "金牌1080",
+      "type": 3,
+      "api": "csp_WebJP",
+      "jar": "./jar/baipiao_xs.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "素白白",
+      "name": "素白1080",
+      "type": 3,
+      "api": "csp_Subaibai",
+      "jar": "./jar/baipiao_xs.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1,
+      "ext": "http://subaibai.com"
+    },
+    {
+      "key": "骚火影视",
+      "name": "火火1080",
+      "type": 3,
+      "api": "csp_SaoHuo",
+      "jar": "./jar/baipiao_xs.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "韩小圈",
+      "name": "韩剧1080",
+      "type": 3,
+      "api": "csp_HanXiaoQuan",
+      "jar": "./jar/baipiao_xs.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "低端影视",
+      "name": "低端1080",
+      "type": 3,
+      "api": "csp_Ddys",
+      "jar": "./jar/baipiao_xs.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "饺子影视",
+      "name": "饺子1080",
+      "type": 3,
+      "api": "csp_Jiaozi",
+      "jar": "./jar/baipiao_xs.jar",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "AList",
+      "name": "AList",
+      "type": 3,
+      "api": "csp_AList",
+      "searchable": 1,
+      "changeable": 0,
+      "ext": "./json/alist.json"
+    },
+    {
+      "key": "Emby",
+      "name": "媒体库",
+      "type": 3,
+      "api": "csp_Wexemby",
+      "searchable": 1,
+      "changeable": 1,
+      "jar": "./baipiao_wex.jar"
+    },
+    {
+      "key": "115网盘",
+      "name": "115网盘",
+      "type": 3,
+      "api": "csp_Wex115share",
+      "searchable": 1,
+      "changeable": 1,
+      "timeout": 50,
+      "style": {
+        "type": "list"
+      },
+      "jar": "./baipiao_wex.jar"
+    },
+    {
+      "key": "网盘集合",
+      "name": "网盘集合",
+      "type": 3,
+      "api": "csp_网盘集合",
+      "searchable": 1,
+      "filterable": 0,
+      "switchable": 0,
+      "ext": {
+        "commonConfig": "./json/peizhi.json",
+        "share": "./json/网盘合集.json"
+      }
+    },
+    {
+      "key": "push_agent",
+      "name": "配置推送",
+      "type": 3,
+      "api": "csp_Push",
+      "searchable": 1,
+      "filterable": 0,
+      "switchable": 0,
+      "ext": {
+        "commonConfig": "./json/peizhi.json"
+      }
+    },
+    {
+      "key": "白嫖应用商店",
+      "name": "白嫖应用商店",
+      "type": 3,
+      "api": "csp_Market",
+      "searchable": 0,
+      "changeable": 0,
+      "jar": "./jar/baipiao_app.jar",
+      "ext": "./json/白嫖应用商店.json"
+    },
+    {
+      "key": "公告3",
+      "name": "本接口所有资源均为互联网搜集而来，纯公益资源，免费白嫖，没有任何收费性质！",
+      "searchable": 0,
+      "changeable": 0
+    }
+  ],
+  "lives": [
+    {
+      "name": "YanG电视",
+      "type": 0,
+      "url": "https://tv.iill.top/m3u/Gather",
+      "playerType": 1
+    },
+    {
+      "name": "YanG直播",
+      "type": 0,
+      "url": "https://tv.iill.top/m3u/Live",
+      "playerType": 1
+    },
+    {
+      "name": "YanG体育",
+      "type": 0,
+      "url": "https://tv.iill.top/m3u/Sport",
+      "playerType": 1
+    }
+  ],
+  "rules": [
+    {
+      "name": "proxy",
+      "hosts": [
+        "raw.githubusercontent.com",
+        "googlevideo.com",
+        "cdn.v82u1l.com",
+        "cdn.iz8qkg.com",
+        "cdn.kin6c1.com",
+        "stream-link.org",
+        "hinet.net",
+        "koyeb.app",
+        "c.biggggg.com",
+        "c.olddddd.com",
+        "haiwaikan.com",
+        "www.histar.tv",
+        "youtube.com",
+        "uhibo.com",
+        ".*boku.*",
+        ".*nivod.*",
+        "*.t4tv.hz.cz",
+        ".*ulivetv.*"
+      ]
+    }
+  ]
+}
