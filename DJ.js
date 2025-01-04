@@ -1,4 +1,27 @@
-{
+/******************************
+ 
+脚本名称:测试DJ
+
+*******************************
+%¥
+[rewrite_local]
+^https?:\/\/apphy2\.djyule\.com\/userLogin_2022md5\.asp|https?:\/\/apphy2\.djyule\.com.*?.*? url script-response-body DJyyh.js
+
+
+[mitm]
+hostname = apphy2.djyule.com,apphy2.djyule.com
+%¥
+*******************************/
+let body=$response.body;
+body = body.replace(/<HYVIP>\d</HYVIP>/g,'<HYVIP>1</HYVIP>');
+body = body.replace(/VIPdate>.*?</VIPdate>/g,'VIPdate>1</VIPdate>');
+body = body.replace(/<VIPdate>.*?</VIPdate>/g,'<VIPdate>2999/09/09</VIPdate>');
+body = body.replace(/<VIPgrade>\d</VIPgrade>/g,'<VIPgrade>1</VIPgrade>');
+body = body.replace(/<showPlayTingSQ>\d</showPlayTingSQ>/g,'<showPlayTingSQ>1</showPlayTingSQ>');
+body = body.replace(/<JinBi>.*?</JinBi>/g,'<JinBi>666666</JinBi>');
+body = body.replace(/<downBi>\d+</downBi>/g,'<downBi>0</downBi>');
+body = body.replace(/<duJiaZZ>\d</duJiaZZ>/g,'<duJiaZZ>0</duJiaZZ>');
+$done(body);{
   "rules" : [
     {
       "action" : "body",
