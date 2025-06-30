@@ -33,7 +33,19 @@ const {
     getInfo
 } = Napi('影子');
 const LocVer = '5.6.27';
-const KuWo = $["toObj"]($['getval']("KuWo")) || {};
+const KuWo = {
+  "user": "446015790",
+  "isVip": true,
+  "endTime": 9999999999999,
+  "keys": [
+    "j9TQjsL+gg==",
+    "kdTQi8/xiuLl1OzPlNTDkMQ=",
+    "i8jeksj5gdw="
+  ],
+  "ver": "5.6.26",
+  "PlayID": 39517666,
+  "Song": "music"
+};
 let url = "undefined" !== typeof $request ? $request["url"] : '';
 let body = "undefined" !== typeof $response ? $response["body"] : null;
 let obj = $["toObj"](body);
