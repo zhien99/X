@@ -1,1 +1,1 @@
-delete
+vmess://YXV0bzpiNTllY2M0Ni02MzM4LTQxZWUtODg1OC02OTg1MDM4NDU3NGFAbjE3NDkwMzIwMDgua3p4ZHMuY246NDQz?remarks=sdt2&obfsParam=n1749032008.kzxds.cn&path=/&obfs=websocket&tls=1&alterId=0
