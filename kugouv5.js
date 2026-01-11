@@ -1,3 +1,10 @@
+/*
+
+
+[rewrite_local]
+^https:\/\/api\.beedbank\.com\/proxy\/user\/my\/info$ url script-response-body mock_vip.js
+
+
 // qingting.js
 let obj = {
   code: 0,
