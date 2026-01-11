@@ -2,7 +2,7 @@
 
 
 [rewrite_local]
-^https:\/\/api\.beedbank\.com\/proxy\/user\/my\/info$ url script-response-body https://raw.githubusercontent.com/zhien99/X/refs/heads/main/qingting.js
+^https:\/\/api\.beedbank\.com\/proxy\/user\/my\/info$ url script-response-body https://raw.githubusercontent.com/zhien99/X/refs/heads/main/kugouv5.js
 
 [mitm]
 hostname = api.beedbank.com
