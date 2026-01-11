@@ -2,8 +2,12 @@
 
 
 [rewrite_local]
-^https:\/\/api\.beedbank\.com\/proxy\/user\/my\/info$ url script-response-body mock_vip.js
+^https:\/\/api\.beedbank\.com\/proxy\/user\/my\/info$ url script-response-body https://raw.githubusercontent.com/zhien99/X/refs/heads/main/qingting.js
 
+[mitm]
+hostname = api.beedbank.com
+
+*/
 
 // qingting.js
 let obj = {
